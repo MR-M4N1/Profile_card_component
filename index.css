@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+body {
+    font-family: "Kumbh Sans" , sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg),
+        url(./images/bg-pattern-bottom.svg);
+    background-position: top left ,right bottom;
+    background-position-x: calc(-1 * var(--background-size) /2), calc(100% + var(--background-size) /2) ;
+    background-position-y: calc(-1 * var(--background-size) /2), calc(100% + var(--background-size) /2);
+    background-repeat: no-repeat;
+    background-size: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --background-size : 500px;
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --Dark-gray-light: hsl(0, 7%, 92%);
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 280px;
+}
+
+.titles{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+
+}
+
+.podtitles{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.pattern_card{
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.user_avatar{
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -40px;
+}
+
+.user_NandA{
+    display: flex;
+    align-items: center;
+    margin: 10px 5px 0 0px;
+
+}
+
+.user_name{
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 18px;
+}
+
+.user_age{
+   margin-left: 5px;
+   font-size: 18px;
+}
+
+.user_city{
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.user_FLP{
+    display: flex;
+    width: 210px;
+    padding: 20px;
+    justify-content: space-between;
+    border-top: 1px solid var(--Dark-gray-light) ;
+
+}
+
+.user_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Social_issues{
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    left: 25%;
+    right: 25%;
+}
+
+.attribution a {
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+  
+   body{
+    background-size: 700px;
+    background-position-x: calc(-1 * var(--background-size) /7), calc(100% + var(--background-size) /8);
+    background-position-y: calc(-1 * var(--background-size) /2), calc(100% + var(--background-size) /2);
+   }
+
+    :root{
+        --background-size : 700px;
+  } 
+
+}
