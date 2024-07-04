@@ -26,7 +26,7 @@
 
 ### Links
 
-- Solution URL: [GIT_URL]()
+- Solution URL: [GIT_URL](https://github.com/MR-M4N1/Profile_card_component)
 - Live Site URL: [GIT_LIV]()
 
 ## My process
